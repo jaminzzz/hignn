@@ -17,3 +17,6 @@ To install [requirements](https://github.com/jaminzzz/hignn/requirements.txt):
 pip install -r requirements.txt
 ```
 
+
+## Acknowledgments
+The code was partly built based on [chemprop](https://github.com/chemprop/chemprop), [TrimNet](https://github.com/yvquanli/trimnet) and [Swin Transformer](https://github.com/microsoft/Swin-Transformer). Thanks a lot for their open source codes!
