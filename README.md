@@ -17,6 +17,10 @@ To install [requirements](https://github.com/jaminzzz/hignn/requirements.txt):
 pip install -r requirements.txt
 ```
 
+## Usage
+
+## Data
+
 ## Results
 In the present study, we evaluated the proposed HiGNN model on 11 commonly used and publicly available drug discovery-related datasets from [Wu et al.](https://pubs.rsc.org/en/content/articlelanding/2018/SC/C7SC02664A), including classification and regression tasks. According to previous studies, 14 learning tasks were designed based on 11 benchmark datasets, including 11 classification tasks based random- and scaffold-splitting methods and three regression tasks based on random-splitting method.
 
