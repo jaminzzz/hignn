@@ -1,6 +1,6 @@
 ## Introduction
 HiGNN is a well-designed hierarchical and interactive informative graph neural networks framework for predicting molecular property by utilizing a co-representation learning of molecular graphs and chemically synthesizable BRICS fragments. Meanwhile, a plug-and-play feature-wise attention block was first designed in HiGNN architecture to adaptively recalibrate atomic features after message passing phase.
-![github_hignn](https://user-images.githubusercontent.com/62273762/172757059-a952ed7e-20f0-4cb1-ac08-fd0185b97bac.png)
+![overview]([https://user-images.githubusercontent.com/62273762/172757059-a952ed7e-20f0-4cb1-ac08-fd0185b97bac.png](https://github.com/jaminzzz/hignn/blob/main/overview.png))
 
 ## Requirements
 This project is developed using python 3.7.10, and mainly requires the following libraries.
