@@ -29,7 +29,7 @@ Table 1 Predictive performance results of HiGNN on the drug discovery-related be
 
 | Dataset | Split Type | Metric  | Chemprop | GCN   | GAT   | Attentive FP | HRGCN+ | XGBoost | HiGNN   |
 |---------|------------|---------|----------|-------|-------|--------------|--------|---------|---------|
-| BACE    | random     | ROC-AUC | **898**  | **0.898** | 0.886 | 0.876        | 0.891  | 0.889   | 0.890   |
+| BACE    | random     | ROC-AUC | **0.898**  | **0.898** | 0.886 | 0.876        | 0.891  | 0.889   | 0.890   |
 |         | scaffold   | ROC-AUC | 0.857    |       |       |              |        |         | **0.882**   |
 | HIV     | random     | ROC-AUC | 0.827    | **0.834** | 0.826 | 0.822        | 0.824  | 0.816   | 0.816   |
 |         | scaffold   | ROC-AUC | 0.794    |       |       |              |        |         | **0.802**   |
