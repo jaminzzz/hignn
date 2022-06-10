@@ -35,7 +35,26 @@ pip install -r requirements.txt
 5. `example:` jupyter notebook codes for fragments counting, t-SNE visualization, interpretation and so on.
 
 ### Training example
-Taking the BBBP dataset as an example, 
+Taking the BBBP dataset as an example, experiment can be run via:
+```shell
+git clone https://github.com/idruglab/hignn
+cd ./hignn
+
+# For one random seed
+python ./source/train.py --cfg ./configs/bbbp/bbbp.yaml 'SEED' 2022 'MODEL.BRICS' True 'MODEL.F_ATT' True --tag seed_2022
+
+# For 10 different random seeds (2021~2030)
+python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml 'MODEL.BRICS' True 'MODEL.F_ATT' True 'HYPER' False --tag 10_seeds
+
+# For hyperparameters optimization
+python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml 'MODEL.BRICS' True 'MODEL.F_ATT' True --tag hignn # HiGNN
+python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml 'MODEL.F_ATT' True --tag w/o_hi # the variant (w/o HI)
+python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml 'MODEL.BRICS' True --tag w/o_fa # the variant (w/o FA)
+python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml --tag hignn # the variant (w/o All)
+```
+
+###  Interpretation
+The interpretability of HiGNN can refer to [interpretation_bace](https://github.com/jaminzzz/hignn/blob/main/example/interpretation_bace.ipynb "interpretation_bace.ipynb") and [interpretation_bbbp](https://github.com/jaminzzz/hignn/blob/main/example/interpretation_bbbp.ipynb "interpretation_bbbp.ipynb").
 
 ## Data
 - The datasets used in this study are available in [BaiduNetdisk](https://pan.baidu.com/s/1NDDrsjWuL_5PhOeSD7RM5w?pwd=scut) or [MoleculeNet](https://moleculenet.org/).
