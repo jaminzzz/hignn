@@ -52,6 +52,7 @@ python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml 'MODEL.F_ATT' T
 python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml 'MODEL.BRICS' True --tag w/o_fa # the variant (w/o FA)
 python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml --tag hignn # the variant (w/o All)
 ```
+And more hyperparameter details can be found in [config.py](https://github.com/jaminzzz/hignn/blob/main/source/config.py "config.py").
 
 ###  Interpretation
 The interpretability of HiGNN can refer to [interpretation_bace](https://github.com/jaminzzz/hignn/blob/main/example/interpretation_bace.ipynb "interpretation_bace.ipynb") and [interpretation_bbbp](https://github.com/jaminzzz/hignn/blob/main/example/interpretation_bbbp.ipynb "interpretation_bbbp.ipynb").
